@@ -16,3 +16,23 @@ body{
     background-color: #00e165;
     border: 1px solid #006cfa;    
 }
+
+.sky{
+    background-color: rgb(125, 222, 252);
+}
+
+.red{
+    border: 0;
+    background-color: brown;
+}
+
+.blue{
+    border: 0;
+    background-color: rgb(43, 30, 155);
+}
+
+.skin{
+    border: 0;
+    background-color: rgb(219, 182, 78);
+
+}
