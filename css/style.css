@@ -1,6 +1,4 @@
-body{
 
-}
 
 .box, .box-nested{
     padding: 15px;
@@ -21,18 +19,24 @@ body{
     background-color: rgb(125, 222, 252);
 }
 
-.red{
+.red, .blue, .skin{
     border: 0;
+    position: relative;
+}
+
+.red{
     background-color: brown;
 }
 
 .blue{
-    border: 0;
     background-color: rgb(43, 30, 155);
 }
 
 .skin{
-    border: 0;
     background-color: rgb(219, 182, 78);
+}
 
+[class *= 'col-']{
+    height: calc(80vw /12);
+    min-height: 50px;
 }
