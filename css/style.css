@@ -15,6 +15,8 @@
     border: 1px solid #006cfa;    
 }
 
+
+
 .sky{
     background-color: rgb(125, 222, 252);
 }
@@ -36,7 +38,60 @@
     background-color: rgb(219, 182, 78);
 }
 
-[class *= 'col-']{
+#mario [class *= 'col-']{
     height: calc(80vw /12);
     min-height: 50px;
+}
+
+
+/****** BONUS II ******/
+
+.alignment-start{
+    margin-left: 0;
+}
+
+.alignment-center{
+    margin: 0 auto;
+}
+
+.alignment-end{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.alignment-top, .alignment-bottom, .alignment-middle{
+    min-height: 100px;
+    position: relative;
+}
+
+.alignment-top .box, .alignment-middle .box, .alignment-bottom .box{
+    height: 50%;
+    position: absolute;
+    width: 100%;
+}
+
+.alignment-top .box{
+    top: 0;
+}
+
+.alignment-middle .box{
+   top: 25%;
+   bottom: 25%;
+}
+
+.alignment-bottom .box{
+    bottom: 0;
+}
+
+.justify-content-space-around [class *= 'col-'], .justify-content-space-between [class *= 'col-']{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify-content-space-between [class *= 'col-']:first-of-type{
+    margin-left: 0;
+}
+
+.justify-content-space-between [class *= 'col-']:last-of-type{
+    margin-right: 0;
 }
